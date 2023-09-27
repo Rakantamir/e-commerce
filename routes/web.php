@@ -23,6 +23,6 @@ Route::get('/index', function () {
     return view('layout.master');
 });
 
-Auth::routes();
+
 
 Route::get('/', [App\Http\Controllers\HomeController::class, 'index'])->name('layout.master');
